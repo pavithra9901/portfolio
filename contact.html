@@ -1,0 +1,207 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Contact — Asha Rao</title>
+  <meta name="description" content="Get in touch with Asha Rao about a design engagement. Contact form, email, and social links." />
+  <meta name="author" content="Asha Rao" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://asharao.dev/contact.html" />
+
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Asha Rao — Portfolio" />
+  <meta property="og:title" content="Contact — Asha Rao" />
+  <meta property="og:description" content="Get in touch about a design engagement." />
+  <meta property="og:url" content="https://asharao.dev/contact.html" />
+  <meta name="twitter:card" content="summary" />
+
+  <meta name="theme-color" content="#2e4a7d" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2032%2032'%3E%3Crect%20width='32'%20height='32'%20fill='%231a1d24'/%3E%3Ctext%20x='16'%20y='22'%20font-family='monospace'%20font-size='16'%20fill='%23a86a1d'%20text-anchor='middle'%3EAR%3C/text%3E%3C/svg%3E" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&amp;family=Inter:wght@400;500;600&amp;family=IBM+Plex+Mono:wght@500;600&amp;display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ContactPage",
+    "name": "Contact — Asha Rao",
+    "url": "https://asharao.dev/contact.html"
+  }
+  </script>
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
+  <header class="site-header">
+    <div class="wrap">
+      <a class="brand" href="index.html">
+        <span class="mark">AR</span><span>Asha Rao</span>
+      </a>
+      <button type="button" class="nav-toggle" aria-expanded="false" aria-controls="primary-nav">
+        <span class="nav-toggle-label">Menu</span>
+      </button>
+      <nav id="primary-nav" class="primary-nav" aria-label="Primary">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="contact.html" aria-current="page">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main-content">
+
+    <section class="section">
+      <div class="wrap">
+        <p class="eyebrow">Contact</p>
+        <h1>Let's talk about your project.</h1>
+        <p class="lede">The fastest way to reach me is the form below. I read every
+          message myself and reply within two business days.</p>
+      </div>
+    </section>
+
+    <section class="section" aria-label="Contact form and details" style="padding-top: 0;">
+      <div class="wrap" style="display:grid; grid-template-columns: 1.3fr 1fr; gap: 3rem; align-items: start;">
+
+        <div>
+          <!-- aria-live region: announces submit result to assistive tech without moving focus -->
+          <div id="form-status" class="form-status" role="status" aria-live="polite"></div>
+
+          <form id="contact-form" class="contact-form" novalidate>
+
+            <!-- Honeypot field: hidden from sighted users and assistive tech alike.
+                 Real visitors never see or fill it; bots often do. -->
+            <div class="hp-field" aria-hidden="true">
+              <label for="company_website">Leave this field blank</label>
+              <input type="text" id="company_website" name="company_website" tabindex="-1" autocomplete="off" />
+            </div>
+
+            <div class="form-row">
+              <label for="name">Name <span class="required-flag" aria-hidden="true">*</span></label>
+              <input
+                type="text"
+                id="name"
+                name="name"
+                required
+                autocomplete="name"
+                aria-required="true"
+                aria-describedby="name-error"
+              />
+              <span id="name-error" class="field-error" role="alert"></span>
+            </div>
+
+            <div class="form-row">
+              <label for="email">Email <span class="required-flag" aria-hidden="true">*</span></label>
+              <span class="hint" id="email-hint">We'll only use this to reply to your message.</span>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                required
+                autocomplete="email"
+                aria-required="true"
+                aria-describedby="email-hint email-error"
+              />
+              <span id="email-error" class="field-error" role="alert"></span>
+            </div>
+
+            <div class="form-row">
+              <label for="subject">What's this about?</label>
+              <select id="subject" name="subject" autocomplete="off">
+                <option value="new-project">A new project</option>
+                <option value="collaboration">Collaboration or speaking</option>
+                <option value="feedback">Feedback on this site</option>
+                <option value="other">Something else</option>
+              </select>
+            </div>
+
+            <div class="form-row">
+              <fieldset>
+                <legend>Project timeline</legend>
+                <div class="radio-group">
+                  <label><input type="radio" name="timeline" value="asap" /> As soon as possible</label>
+                  <label><input type="radio" name="timeline" value="1-3-months" checked /> Within 1–3 months</label>
+                  <label><input type="radio" name="timeline" value="exploring" /> Just exploring</label>
+                </div>
+              </fieldset>
+            </div>
+
+            <div class="form-row">
+              <label for="message">Message <span class="required-flag" aria-hidden="true">*</span></label>
+              <span class="hint" id="message-hint">A few sentences on the problem and where you are today is plenty.</span>
+              <textarea
+                id="message"
+                name="message"
+                required
+                aria-required="true"
+                aria-describedby="message-hint message-error char-count"
+              ></textarea>
+              <span id="char-count" class="char-count">800 characters remaining</span>
+              <span id="message-error" class="field-error" role="alert"></span>
+            </div>
+
+            <p>
+              <button type="submit" class="btn btn-primary">Send message</button>
+            </p>
+            <p class="hint">Fields marked <span class="required-flag" aria-hidden="true">*</span> <span class="visually-hidden">(required)</span> are required.</p>
+          </form>
+        </div>
+
+        <div class="contact-info aside-panel">
+          <h2>Other ways to reach me</h2>
+          <address>
+            <dl>
+              <div>
+                <dt>Email</dt>
+                <dd><a href="mailto:hello@asharao.dev">hello@asharao.dev</a></dd>
+              </div>
+              <div>
+                <dt>Location</dt>
+                <dd>Bengaluru, Karnataka, India</dd>
+              </div>
+              <div>
+                <dt>Response time</dt>
+                <dd>Within 2 business days</dd>
+              </div>
+              <div>
+                <dt>Elsewhere</dt>
+                <dd>
+                  <ul class="social-list" style="flex-direction:column; gap:0.4em;">
+                    <li><a href="https://github.com/" rel="noopener noreferrer">GitHub</a></li>
+                    <li><a href="https://www.linkedin.com/" rel="noopener noreferrer">LinkedIn</a></li>
+                  </ul>
+                </dd>
+              </div>
+            </dl>
+          </address>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <div>
+        <p class="footer-meta">© 2026 Asha Rao. Built with semantic HTML5.</p>
+      </div>
+      <nav aria-label="Footer">
+        <ul class="social-list">
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="https://github.com/" rel="noopener noreferrer">GitHub</a></li>
+          <li><a href="https://www.linkedin.com/" rel="noopener noreferrer">LinkedIn</a></li>
+        </ul>
+      </nav>
+    </div>
+  </footer>
+
+  <script src="js/main.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,310 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Projects — Asha Rao</title>
+  <meta name="description" content="Case studies from Asha Rao's work on incident consoles, reconciliation tools, and field logistics software for operational teams." />
+  <meta name="author" content="Asha Rao" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://asharao.dev/projects.html" />
+
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Asha Rao — Portfolio" />
+  <meta property="og:title" content="Projects — Asha Rao" />
+  <meta property="og:description" content="Case studies on incident consoles, reconciliation tools, and field logistics software." />
+  <meta property="og:url" content="https://asharao.dev/projects.html" />
+  <meta name="twitter:card" content="summary" />
+
+  <meta name="theme-color" content="#2e4a7d" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2032%2032'%3E%3Crect%20width='32'%20height='32'%20fill='%231a1d24'/%3E%3Ctext%20x='16'%20y='22'%20font-family='monospace'%20font-size='16'%20fill='%23a86a1d'%20text-anchor='middle'%3EAR%3C/text%3E%3C/svg%3E" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&amp;family=Inter:wght@400;500;600&amp;family=IBM+Plex+Mono:wght@500;600&amp;display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "CollectionPage",
+    "name": "Projects — Asha Rao",
+    "url": "https://asharao.dev/projects.html",
+    "author": { "@type": "Person", "name": "Asha Rao" }
+  }
+  </script>
+
+  <style>
+    /* Page-specific: full case study layout, kept here since it's used only on this page */
+    .case-study {
+      display: grid;
+      grid-template-columns: 1fr 1.3fr;
+      gap: var(--space-4);
+      align-items: start;
+      padding-block: var(--space-5);
+      border-bottom: var(--border-thin);
+      scroll-margin-top: 5.5rem;
+    }
+    .case-study:last-child { border-bottom: none; }
+    .case-study figure { margin: 0; }
+    .case-study .thumb { border: var(--border-thin); }
+    .case-study dl.spec-list {
+      font-family: var(--font-mono);
+      font-size: 0.8rem;
+      display: grid;
+      grid-template-columns: auto 1fr;
+      gap: 0.3em 1em;
+      margin: var(--space-2) 0 0;
+      border-top: var(--border-thin);
+      padding-top: var(--space-2);
+    }
+    .case-study dt { color: var(--color-ink-soft); text-transform: uppercase; letter-spacing: 0.06em; }
+    .case-study dd { margin: 0; }
+    @media (max-width: 48rem) {
+      .case-study { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
+  <header class="site-header">
+    <div class="wrap">
+      <a class="brand" href="index.html">
+        <span class="mark">AR</span><span>Asha Rao</span>
+      </a>
+      <button type="button" class="nav-toggle" aria-expanded="false" aria-controls="primary-nav">
+        <span class="nav-toggle-label">Menu</span>
+      </button>
+      <nav id="primary-nav" class="primary-nav" aria-label="Primary">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="projects.html" aria-current="page">Projects</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main-content">
+
+    <section class="section" style="padding-bottom: 1rem;">
+      <div class="wrap">
+        <p class="eyebrow">Projects</p>
+        <h1>Case studies</h1>
+        <p class="lede">Five projects, each written up with the constraint I was
+          given, the decisions I made, and what shipped.</p>
+      </div>
+    </section>
+
+    <section aria-label="Case studies">
+      <div class="wrap">
+
+        <article class="case-study" id="incident-console" aria-labelledby="cs1-heading">
+          <figure>
+            <svg class="thumb" viewBox="0 0 400 300" role="img" aria-labelledby="cs1-title" focusable="false" xmlns="http://www.w3.org/2000/svg" style="width:100%;">
+              <title id="cs1-title">Line chart and status panel mockup for the incident console redesign</title>
+              <rect width="400" height="300" fill="#e8e9e4"/>
+              <rect x="24" y="24" width="352" height="80" fill="#ffffff" stroke="#b9c2c9"/>
+              <polyline points="34,84 90,60 140,70 190,40 240,55 300,30 360,45" fill="none" stroke="#2e4a7d" stroke-width="3"/>
+              <rect x="24" y="120" width="168" height="156" fill="#ffffff" stroke="#b9c2c9"/>
+              <rect x="208" y="120" width="168" height="72" fill="#ffffff" stroke="#b9c2c9"/>
+              <rect x="208" y="204" width="168" height="72" fill="#ffffff" stroke="#b9c2c9"/>
+              <circle cx="234" cy="146" r="8" fill="#a86a1d"/>
+              <circle cx="234" cy="230" r="8" fill="#276b4b"/>
+            </svg>
+            <figcaption class="visually-hidden">Mockup of the redesigned incident console showing a trend chart and status panels</figcaption>
+          </figure>
+          <div>
+            <h2 id="cs1-heading">Incident Console redesign</h2>
+            <p>Northbridge's on-call engineers were triaging alerts in a feed sorted
+              by timestamp, which meant a low-severity alert from thirty seconds ago
+              could bury a critical one from three minutes ago. I redesigned the
+              console around severity and ownership: alerts group by the service
+              they belong to, escalate visually as they age unacknowledged, and
+              default to showing only what's assigned to the viewer's team.</p>
+            <p>The hardest part wasn't the layout — it was convincing the team to
+              cut fields. The original view surfaced eleven columns of metadata per
+              alert; the shipped version surfaces three, with the rest available on
+              expand. Mean time-to-acknowledge dropped 38% in the following
+              quarter, measured against the same alert volume.</p>
+            <dl class="spec-list">
+              <dt>Role</dt><dd>Lead product designer</dd>
+              <dt>Year</dt><dd>2025</dd>
+              <dt>Team</dt><dd>2 engineers, 1 PM, myself</dd>
+              <dt>Stack</dt><dd>React, internal design system</dd>
+            </dl>
+          </div>
+        </article>
+
+        <article class="case-study" id="ledger-reconcile" aria-labelledby="cs2-heading">
+          <figure>
+            <svg class="thumb" viewBox="0 0 400 300" role="img" aria-labelledby="cs2-title" focusable="false" xmlns="http://www.w3.org/2000/svg" style="width:100%;">
+              <title id="cs2-title">Bar chart dashboard mockup for the ledger reconciliation tool</title>
+              <rect width="400" height="300" fill="#e8e9e4"/>
+              <rect x="24" y="24" width="352" height="252" fill="#ffffff" stroke="#b9c2c9"/>
+              <rect x="50" y="200" width="28" height="50" fill="#2e4a7d"/>
+              <rect x="98" y="160" width="28" height="90" fill="#2e4a7d"/>
+              <rect x="146" y="120" width="28" height="130" fill="#a86a1d"/>
+              <rect x="194" y="180" width="28" height="70" fill="#2e4a7d"/>
+              <rect x="242" y="140" width="28" height="110" fill="#2e4a7d"/>
+              <rect x="290" y="100" width="28" height="150" fill="#2e4a7d"/>
+              <line x1="50" y1="260" x2="330" y2="260" stroke="#8f98a0"/>
+            </svg>
+            <figcaption class="visually-hidden">Mockup of the reconciliation dashboard showing discrepancy totals by account</figcaption>
+          </figure>
+          <div>
+            <h2 id="cs2-heading">Ledger reconciliation tool</h2>
+            <p>A six-person finance-ops team was reconciling two payment ledgers by
+              hand across roughly forty spreadsheet tabs each week. I designed a
+              guided reconciliation queue: the system pre-matches transactions it's
+              confident about and surfaces only the discrepancies that need a human
+              decision, one at a time, with the relevant history alongside each one.</p>
+            <p>I spent the first two weeks just shadowing the reconciliation process
+              before sketching anything, which is where the "one discrepancy at a
+              time" structure came from — the team's biggest complaint wasn't the
+              math, it was losing their place across forty open tabs.</p>
+            <dl class="spec-list">
+              <dt>Role</dt><dd>Product &amp; UX design, 0→1</dd>
+              <dt>Year</dt><dd>2024</dd>
+              <dt>Team</dt><dd>1 engineer, myself</dd>
+              <dt>Stack</dt><dd>Vue, PostgreSQL</dd>
+            </dl>
+          </div>
+        </article>
+
+        <article class="case-study" id="field-logistics" aria-labelledby="cs3-heading">
+          <figure>
+            <svg class="thumb" viewBox="0 0 400 300" role="img" aria-labelledby="cs3-title" focusable="false" xmlns="http://www.w3.org/2000/svg" style="width:100%;">
+              <title id="cs3-title">Map and legend mockup for the field logistics planner</title>
+              <rect width="400" height="300" fill="#e8e9e4"/>
+              <rect x="24" y="24" width="352" height="252" fill="#ffffff" stroke="#b9c2c9"/>
+              <path d="M40 250 L110 120 L170 200 L230 90 L300 180 L360 130" fill="none" stroke="#2e4a7d" stroke-width="2" stroke-dasharray="6 4"/>
+              <circle cx="110" cy="120" r="6" fill="#a86a1d"/>
+              <circle cx="230" cy="90" r="6" fill="#a86a1d"/>
+              <circle cx="360" cy="130" r="6" fill="#276b4b"/>
+              <rect x="40" y="250" width="320" height="1" fill="#8f98a0"/>
+            </svg>
+            <figcaption class="visually-hidden">Mockup of the field logistics planner showing a route map with stop markers</figcaption>
+          </figure>
+          <div>
+            <h2 id="cs3-heading">Field logistics planner</h2>
+            <p>Kestrel's maintenance crews worked in areas with patchy or no signal,
+              which ruled out most off-the-shelf routing software. I designed a
+              route planner and crew-tracking app that works fully offline,
+              queues updates locally, and syncs opportunistically — dispatchers
+              plan routes online, crews follow them without needing a connection.</p>
+            <p>The interesting constraint was trust: crews needed to know at a
+              glance whether their view was live or stale. I used a persistent,
+              always-visible sync indicator rather than burying connection status
+              in a settings menu, which came directly out of field interviews where
+              crews described being burned by silently outdated data before.</p>
+            <dl class="spec-list">
+              <dt>Role</dt><dd>Founding product designer</dd>
+              <dt>Year</dt><dd>2023</dd>
+              <dt>Team</dt><dd>3 engineers, myself</dd>
+              <dt>Stack</dt><dd>React Native, offline-first sync</dd>
+            </dl>
+          </div>
+        </article>
+
+        <article class="case-study" id="alerting-design-system" aria-labelledby="cs4-heading">
+          <figure>
+            <svg class="thumb" viewBox="0 0 400 300" role="img" aria-labelledby="cs4-title" focusable="false" xmlns="http://www.w3.org/2000/svg" style="width:100%;">
+              <title id="cs4-title">Component library mockup showing buttons, badges, and form fields</title>
+              <rect width="400" height="300" fill="#e8e9e4"/>
+              <rect x="24" y="24" width="352" height="252" fill="#ffffff" stroke="#b9c2c9"/>
+              <rect x="48" y="52" width="90" height="32" rx="3" fill="#2e4a7d"/>
+              <rect x="150" y="52" width="90" height="32" rx="3" fill="none" stroke="#1a1d24" stroke-width="2"/>
+              <rect x="48" y="104" width="60" height="22" rx="11" fill="none" stroke="#a86a1d" stroke-width="2"/>
+              <rect x="48" y="150" width="304" height="34" rx="3" fill="none" stroke="#b9c2c9"/>
+              <rect x="48" y="198" width="304" height="34" rx="3" fill="none" stroke="#b9c2c9"/>
+            </svg>
+            <figcaption class="visually-hidden">Mockup of a shared component library showing buttons, badges, and form fields</figcaption>
+          </figure>
+          <div>
+            <h2 id="cs4-heading">Internal design system</h2>
+            <p>Before the incident console redesign, Northbridge's internal tools
+              had no shared component library — every team's dashboard used
+              slightly different spacing, color, and interaction patterns, which
+              made cross-team tools feel like separate products. I audited eleven
+              internal tools, extracted the patterns worth keeping, and built a
+              documented component library on top of them.</p>
+            <p>I treated accessibility as a launch requirement rather than a
+              follow-up pass: every component shipped with keyboard interaction
+              specs and contrast-checked color tokens from day one, which made the
+              later incident console work considerably faster.</p>
+            <dl class="spec-list">
+              <dt>Role</dt><dd>Design systems lead</dd>
+              <dt>Year</dt><dd>2021</dd>
+              <dt>Team</dt><dd>1 engineer, myself</dd>
+              <dt>Stack</dt><dd>React, Storybook</dd>
+            </dl>
+          </div>
+        </article>
+
+        <article class="case-study" id="onboarding-flow" aria-labelledby="cs5-heading">
+          <figure>
+            <svg class="thumb" viewBox="0 0 400 300" role="img" aria-labelledby="cs5-title" focusable="false" xmlns="http://www.w3.org/2000/svg" style="width:100%;">
+              <title id="cs5-title">Step indicator mockup for a multi-step onboarding flow</title>
+              <rect width="400" height="300" fill="#e8e9e4"/>
+              <rect x="24" y="24" width="352" height="252" fill="#ffffff" stroke="#b9c2c9"/>
+              <circle cx="80" cy="90" r="14" fill="#276b4b"/>
+              <circle cx="200" cy="90" r="14" fill="#2e4a7d"/>
+              <circle cx="320" cy="90" r="14" fill="none" stroke="#b9c2c9" stroke-width="2"/>
+              <line x1="94" y1="90" x2="186" y2="90" stroke="#276b4b" stroke-width="2"/>
+              <line x1="214" y1="90" x2="306" y2="90" stroke="#b9c2c9" stroke-width="2"/>
+              <rect x="60" y="160" width="280" height="70" rx="3" fill="none" stroke="#b9c2c9"/>
+            </svg>
+            <figcaption class="visually-hidden">Mockup of a three-step onboarding flow with a progress indicator</figcaption>
+          </figure>
+          <div>
+            <h2 id="cs5-heading">Self-serve onboarding flow</h2>
+            <p>A B2B analytics product had a 40-minute, sales-assisted setup process
+              that was becoming a bottleneck as the company moved toward self-serve
+              signups. I redesigned setup as a three-step flow that front-loads the
+              one integration step that actually blocks value, deferring
+              nice-to-have configuration until after the user sees real data.</p>
+            <p>Self-serve activation (accounts reaching first meaningful dashboard
+              view) rose from 22% to 51% over two release cycles.</p>
+            <dl class="spec-list">
+              <dt>Role</dt><dd>Product designer</dd>
+              <dt>Year</dt><dd>2020</dd>
+              <dt>Team</dt><dd>2 engineers, 1 PM, myself</dd>
+              <dt>Stack</dt><dd>React</dd>
+            </dl>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="wrap">
+        <p class="eyebrow">Get in touch</p>
+        <h2>Have a similar problem?</h2>
+        <p><a class="btn btn-primary" href="contact.html">Start a conversation</a></p>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <div>
+        <p class="footer-meta">© 2026 Asha Rao. Built with semantic HTML5.</p>
+      </div>
+      <nav aria-label="Footer">
+        <ul class="social-list">
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="https://github.com/" rel="noopener noreferrer">GitHub</a></li>
+          <li><a href="https://www.linkedin.com/" rel="noopener noreferrer">LinkedIn</a></li>
+        </ul>
+      </nav>
+    </div>
+  </footer>
+
+  <script src="js/main.js" defer></script>
+</body>
+</html>
